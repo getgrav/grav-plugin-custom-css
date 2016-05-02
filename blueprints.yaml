@@ -1,0 +1,39 @@
+name: Custom CSS
+version: 0.1.0
+description: Adds some custom CSS to your Grav site
+icon: plug
+author:
+  name: Team Grav
+  email: devs@getgrav.org
+homepage: https://github.com/getgrav/grav-plugin-custom-css
+keywords: grav, plugin, css, design
+bugs: https://github.com/getgrav/grav-plugin-custom-css/issues
+readme: https://github.com/getgrav/grav-plugin-custom-css/blob/develop/README.md
+license: MIT
+
+form:
+  validation: strict
+  fields:
+    enabled:
+      type: toggle
+      label: Plugin status
+      highlight: 1
+      default: 0
+      options:
+        1: Enabled
+        0: Disabled
+      validate:
+        type: bool
+
+    css_inline:
+      type: textarea
+      label: Inline CSS
+      help: CSS that will be added inline to every page
+
+    css_files:
+      type: list
+      label: CSS Files
+      help: CSS Files that will be loaded on every page. Use relative or absolute URLs
+      fields:
+        .path:
+          type: text
