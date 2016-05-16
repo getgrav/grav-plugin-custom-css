@@ -39,3 +39,8 @@ form:
           type: text
           label: File path
           help: Relative to web root
+        .priority:
+          type: int
+          label: Priority (0=Default)
+          help: Lower means later inclusion. Negative value to add this file after the other files (that come with the theme)
+          default: 0
