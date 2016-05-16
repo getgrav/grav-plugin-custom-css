@@ -37,3 +37,5 @@ form:
       fields:
         .path:
           type: text
+          label: File path
+          help: Relative to web root
