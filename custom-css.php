@@ -39,7 +39,7 @@ class CustomCSSPlugin extends Plugin
     {
         $this->grav['assets']->addInlineCss($this->config->get('plugins.custom-css.css_inline'));
 
-        foreach($this->config->get('plugins.custom-css.css_files') as $file) {
+        foreach($this->config->get('plugins.custom-css.css_files', []) as $file) {
             $this->grav['assets']->addCss($file['path'], isset($file['priority']) ? $file['priority'] : null);
         }
     }

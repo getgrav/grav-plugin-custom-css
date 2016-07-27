@@ -1,3 +1,9 @@
+# v0.2.1
+##  07/27/2016
+
+1. [](#bugfix)
+    * Fix running plugin without adding CSS files to include [#2](https://github.com/getgrav/grav-plugin-custom-css/issues/2)
+
 # v0.2.0
 ##  05/23/2016
 
