@@ -26,7 +26,8 @@ form:
         type: bool
 
     css_inline:
-      type: textarea
+      type: editor
+        mode: css
       label: Inline CSS
       help: CSS that will be added inline to every page
 
