@@ -1,3 +1,9 @@
+# v0.2.2
+##  12/15/2018
+
+1. [](#improved)
+    * Use Codemirror for Inline CSS
+
 # v0.2.1
 ##  07/27/2016
 
