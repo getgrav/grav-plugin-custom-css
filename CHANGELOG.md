@@ -1,5 +1,5 @@
 # v0.2.2
-##  xx/xx/xxxx
+##  12/15/2018
 
 1. [](#improved)
     * Use Codemirror for Inline CSS
