@@ -27,6 +27,7 @@ form:
 
     css_inline:
       type: editor
+      codemirror:
         mode: css
       label: Inline CSS
       help: CSS that will be added inline to every page
