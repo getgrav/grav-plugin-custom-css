@@ -1,9 +1,9 @@
 # v0.2.2
-##  12/17/2018
+##  mm/dd/2018
 
 1. [](#new)
     * Added translation
-2. [](#improved)
+1. [](#improved)
     * Use Codemirror for Inline CSS
 
 # v0.2.1
