@@ -1,5 +1,5 @@
 # v0.2.2
-##  mm/dd/2018
+##  12/19/2018
 
 1. [](#new)
     * Added translation
