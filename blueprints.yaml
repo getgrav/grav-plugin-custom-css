@@ -1,5 +1,5 @@
 name: Custom CSS
-version: 0.2.1
+version: 0.2.2
 description: Adds some custom CSS to your Grav site
 icon: plug
 author:
@@ -16,31 +16,33 @@ form:
   fields:
     enabled:
       type: toggle
-      label: Plugin status
+      label: PLUGIN_ADMIN.PLUGIN_STATUS
       highlight: 1
       default: 0
       options:
-        1: Enabled
-        0: Disabled
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
       validate:
         type: bool
 
     css_inline:
-      type: textarea
-      label: Inline CSS
-      help: CSS that will be added inline to every page
+      type: editor
+      codemirror:
+        mode: css
+      label: PLUGIN_CUSTOM_CSS.INLINE_CSS
+      help: PLUGIN_CUSTOM_CSS.INLINE_CSS_HELP
 
     css_files:
       type: list
-      label: CSS Files
-      help: CSS Files that will be loaded on every page. Use relative or absolute URLs
+      label: PLUGIN_CUSTOM_CSS.CSS_FILES
+      help: PLUGIN_CUSTOM_CSS.CSS_FILES_HELP
       fields:
         .path:
           type: text
-          label: File path
-          help: Relative to web root
+          label: PLUGIN_CUSTOM_CSS.CSS_FILES_PATH
+          help: PLUGIN_CUSTOM_CSS.CSS_FILES_PATH_HELP
         .priority:
           type: int
-          label: Priority (0=Default)
-          help: Lower means later inclusion. Negative value to add this file after the other files (that come with the theme)
+          label: PLUGIN_CUSTOM_CSS.CSS_FILES_PATH_PRIORITY
+          help: PLUGIN_CUSTOM_CSS.CSS_FILES_PATH_PRIORITY_HELP
           default: 0
