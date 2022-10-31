@@ -1,12 +1,12 @@
-name: Custom CSS
+name: Custom CSS/JS
 version: 0.2.2
-description: Adds some custom CSS to your Grav site
+description: Adds some custom CSS/JS to your Grav site
 icon: plug
 author:
   name: Team Grav
   email: devs@getgrav.org
 homepage: https://github.com/getgrav/grav-plugin-custom-css
-keywords: grav, plugin, css, design
+keywords: grav, plugin, css, js, design
 bugs: https://github.com/getgrav/grav-plugin-custom-css/issues
 readme: https://github.com/getgrav/grav-plugin-custom-css/blob/develop/README.md
 license: MIT
@@ -45,4 +45,26 @@ form:
           type: int
           label: PLUGIN_CUSTOM_CSS.CSS_FILES_PATH_PRIORITY
           help: PLUGIN_CUSTOM_CSS.CSS_FILES_PATH_PRIORITY_HELP
+          default: 0
+
+    js_inline:
+      type: editor
+      codemirror:
+        mode: js
+      label: PLUGIN_CUSTOM_CSS.INLINE_JS
+      help: PLUGIN_CUSTOM_CSS.INLINE_JS_HELP
+
+    js_files:
+      type: list
+      label: PLUGIN_CUSTOM_CSS.JS_FILES
+      help: PLUGIN_CUSTOM_CSS.JS_FILES_HELP
+      fields:
+        .path:
+          type: text
+          label: PLUGIN_CUSTOM_CSS.JS_FILES_PATH
+          help: PLUGIN_CUSTOM_CSS.JS_FILES_PATH_HELP
+        .priority:
+          type: int
+          label: PLUGIN_CUSTOM_CSS.JS_FILES_PATH_PRIORITY
+          help: PLUGIN_CUSTOM_CSS.JS_FILES_PATH_PRIORITY_HELP
           default: 0

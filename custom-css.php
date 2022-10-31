@@ -44,5 +44,12 @@ class CustomCSSPlugin extends Plugin
                 $this->grav['assets']->addCss($file['path'], isset($file['priority']) ? $file['priority'] : null);
             }
         }
+        $this->grav['assets']->addInlineJs($this->config->get('plugins.custom-css.js_inline'));
+
+        foreach($this->config->get('plugins.custom-css.js_files', []) as $file) {
+            if (trim($file['path']) !== '') {
+                $this->grav['assets']->addJs($file['path'], isset($file['priority']) ? $file['priority'] : null);
+            }
+        }
     }
 }
