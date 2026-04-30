@@ -1,5 +1,5 @@
 name: Custom CSS
-version: 0.2.2
+version: 0.2.3
 description: Adds some custom CSS to your Grav site
 icon: plug
 author:
@@ -10,6 +10,9 @@ keywords: grav, plugin, css, design
 bugs: https://github.com/getgrav/grav-plugin-custom-css/issues
 readme: https://github.com/getgrav/grav-plugin-custom-css/blob/develop/README.md
 license: MIT
+
+compatibility:
+  grav: ['1.7', '2.0']
 
 form:
   validation: strict
